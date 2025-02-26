@@ -1,5 +1,6 @@
-%let mProjectName = OrionStarHW;
-%let mProjectPath = &mHomePath./MySASProjects/&mProjectName.;
+%if %symexist(mProjectPath) ne 1 %then %do;
+   %put ERROR: Macro variable mProjectPath is not defined - check that 00InitProject.sas was run; 
+%end;
 
 libname LIB_TMP "&mProjectPath./temp";
 
