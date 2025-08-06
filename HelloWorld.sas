@@ -11,7 +11,7 @@ run;
 
 data LIB_TMP.MSG_CONFIG_FILTERED;
    set LIB_TMP.MSG_CONFIG;
-   where MessageID = "HELLO_WORLD_FORMAL";
+   where MessageID = "HELLO_WORLD_INFORMAL1";
 run;
 
 data WORK.GREETING;
