@@ -11,11 +11,7 @@ run;
 
 data LIB_TMP.MSG_CONFIG_FILTERED;
    set LIB_TMP.MSG_CONFIG;
-<<<<<<< Local
-   where MessageID = "HELLO_WORLD_FORMAL1";
-=======
    where MessageID = "HELLO_WORLD_INFORMAL2";
->>>>>>> Remote
 run;
 
 data WORK.GREETING;
